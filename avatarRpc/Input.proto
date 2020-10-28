@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package avatar;
+
+message Input{
+  string deviceid = 1;
+  string movieid = 2;
+  string category = 3;
+  int64 ptf=4;
+  string key=5;
+  int64 pageIndex=6;
+  int64 pageSize=7;
+}

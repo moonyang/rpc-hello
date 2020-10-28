@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package avatar;
+
+import "Input.proto";
+import "Output.proto";
+
+// 定义服务
+service AvatarMovie {
+    rpc GetAvatarMovie (AvatarMovieRequest) returns (AvatarMovieResponse) {}
+}
+
+// 请求体的结构体
+message AvatarMovieRequest {
+  repeated avatar.Input input =1;
+}
+
+
+// 响应的结构体
+message AvatarMovieResponse {
+    avatar.Output output=1;
+}
